@@ -12,17 +12,10 @@
         android:weightSum="9"
         tools:context=".MainActivity">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_weight="1" />
-
-        <ImageView
+    <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="699dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="8"
             app:srcCompat="@mipmap/ic_launcher_prueba5_foreground" />

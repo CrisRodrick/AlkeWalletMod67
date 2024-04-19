@@ -10,18 +10,18 @@
 
     <TextView
         android:id="@+id/txt83"
-        android:layout_width="356dp"
-        android:layout_height="87dp"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
         android:fontFamily="@font/jua"
         android:text="@string/txt72"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <TextView
         android:id="@+id/txt81"
@@ -41,9 +41,9 @@
 
     <ImageButton
         android:id="@+id/flecha"
+        android:contentDescription="Null"
         android:layout_width="57dp"
         android:layout_height="46dp"
-        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
@@ -66,38 +66,39 @@
 
     <EditText
         android:id="@+id/hint4"
-        android:layout_width="356dp"
+        android:layout_width="360dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="476dp"
+        android:layout_marginBottom="400dp"
         android:background="@color/material_dynamic_neutral90"
         android:ems="10"
-        android:hint="@string/hint4"
         android:fontFamily="@font/jua"
+        android:hint="@string/hint4"
         android:inputType="number"
         android:selectAllOnFocus="true"
         android:textColorHint="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txt73"
-        android:layout_width="356dp"
-        android:layout_height="189dp"
-        android:layout_marginBottom="244dp"
+        android:layout_width="360dp"
+        android:layout_height="24dp"
         android:fontFamily="@font/jua"
         android:text="@string/txt73"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="276dp" />
 
     <EditText
         android:id="@+id/hint5"
-        android:layout_width="356dp"
+        android:layout_width="360dp"
         android:layout_height="152dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="204dp"
         android:background="@color/material_dynamic_neutral90"
         android:ems="10"
         android:fontFamily="@font/jua"
