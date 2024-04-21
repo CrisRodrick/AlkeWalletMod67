@@ -14,7 +14,7 @@
     <EditText
         android:id="@+id/txt41"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="105dp"
         android:layout_weight="4"
         android:ems="10"
         android:fontFamily="@font/jua"
@@ -24,43 +24,46 @@
         android:text="@string/txt31"
         android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/txt32"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="2"
-        android:ems="10"
+    <TextView
+        android:id="@+id/txt3a"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
-        android:inputType="text"
-        android:outlineAmbientShadowColor="#FFFCFC"
         android:text="@string/txt32"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txt33"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="2"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
         android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/txt3b"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
-        android:inputType="text"
         android:text="@string/txt33"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="numberPassword" />
 
     <TextView
         android:id="@+id/txt81"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
         android:gravity="right|center_vertical"
@@ -72,13 +75,13 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="105dp"
         android:layout_weight="1.5"
         android:text="" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="320dp"
+        android:layout_width="345dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#63B8FC"
@@ -88,7 +91,7 @@
 
     <TextView
         android:id="@+id/txt45"
-        android:layout_width="239dp"
+        android:layout_width="345dp"
         android:layout_height="27dp"
         android:layout_gravity="center"
         android:fontFamily="@font/jua"
