@@ -38,4 +38,6 @@
     <string name="button10">Enviar Dinero</string>
     <string name="txt91">Mi Perfil</string>
     <string name="txt92">Amanda Alkemy</string>
+    <string name="hintemail">Ingresar su Email</string>
+    <string name="hintcontras">Ingrese su Contraseña</string>
 </resources>

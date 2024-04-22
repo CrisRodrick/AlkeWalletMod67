@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/splash_scree"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     android:weightSum="12"
     tools:context=".MainActivity">
 
@@ -35,12 +34,17 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/txtEmail"
         android:layout_width="345dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
+        android:background="@color/lilahint"
+        android:backgroundTint="@color/lila"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:fontFamily="@font/jua"
+        android:hint="@string/hintemail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grishint" />
 
     <TextView
         android:id="@+id/txt3b"
@@ -53,12 +57,16 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/txtpasword"
         android:layout_width="345dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
+        android:background="@color/lilahint"
         android:ems="10"
-        android:inputType="numberPassword" />
+        android:fontFamily="@font/jua"
+        android:hint="@string/hintcontras"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/grishint" />
 
     <TextView
         android:id="@+id/txt81"
@@ -66,10 +74,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
+        android:fontFamily="@font/jua"
         android:gravity="right|center_vertical"
         android:text="@string/txt34"
         android:textColor="@color/celeste"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView

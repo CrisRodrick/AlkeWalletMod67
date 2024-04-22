@@ -8,14 +8,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    android:weightSum="12"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/txt41"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_height="120dp"
+        android:background="@color/white"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:gravity="bottom|center_horizontal"
@@ -24,101 +23,124 @@
         android:text="@string/txt41"
         android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/txt42"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1.5"
-        android:ems="10"
+    <TextView
+        android:id="@+id/txt4a"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
-        android:inputType="text"
-        android:outlineAmbientShadowColor="#FFFCFC"
         android:text="@string/txt42"
-        android:textColorHint="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txt43"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1.5"
+        android:id="@+id/editTextText"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lilahint"
         android:ems="10"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
+        android:hint="@string/hint1"
         android:inputType="text"
-        android:outlineAmbientShadowColor="#FFFCFC"
+        android:textColorHint="@color/grishint"/>
+
+    <TextView
+        android:id="@+id/txt4b"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
         android:text="@string/txt43"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txt32"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1.5"
+        android:id="@+id/editTextText2"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lilahint"
         android:ems="10"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
+        android:hint="@string/hint2"
         android:inputType="text"
-        android:outlineAmbientShadowColor="#FFFCFC"
+        android:textColorHint="@color/grishint" />
+
+    <TextView
+        android:id="@+id/txt3a"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
         android:text="@string/txt32"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txt33"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1.5"
+        android:id="@+id/txtEmail"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lilahint"
         android:ems="10"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
-        android:inputType="text"
+        android:hint="@string/hintemail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grishint" />
+
+    <TextView
+        android:id="@+id/txt3b"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
         android:text="@string/txt33"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txt44"
-        android:layout_width="320dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1.5"
+        android:id="@+id/txtpasword"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lilahint"
         android:ems="10"
         android:fontFamily="@font/jua"
-        android:freezesText="false"
-        android:gravity="start"
-        android:inputType="text"
+        android:hint="@string/hintcontras"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/grishint" />
+
+
+    <TextView
+        android:id="@+id/txt4c"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
         android:text="@string/txt44"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lilahint"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/txt44"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/grishint" />
 
     <TextView
         android:id="@+id/txt81"
         android:layout_width="320dp"
-        android:layout_height="0dp"
+        android:layout_height="32dp"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.5"
         android:gravity="right|center_vertical"
-        android:text=""
-        android:textColor="@color/celeste"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="" />
 
     <Button
         android:id="@+id/button3"
