@@ -5,7 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
         <item name="colorPrimaryDark">@color/celeste</item>
-        <item name="android:navigationBarColor">@color/celeste</item>
+        <item name="android:navigationBarColor">@color/black</item>
     </style>
 
     <style name="Theme.AlkewalletAndroid" parent="Base.Theme.AlkewalletAndroid" />
