@@ -26,9 +26,10 @@
 
     <ImageButton
         android:id="@+id/flecha"
-        android:background="@Null"
         android:layout_width="57dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
