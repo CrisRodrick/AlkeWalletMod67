@@ -38,12 +38,12 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@color/lilahint"
+        android:background="@color/lila2"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:hint="@string/hint1"
         android:inputType="text"
-        android:textColorHint="@color/grishint"/>
+        android:textColorHint="@color/gris2"/>
 
     <TextView
         android:id="@+id/txt4b"
@@ -60,12 +60,12 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@color/lilahint"
+        android:background="@color/lila2"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:hint="@string/hint2"
         android:inputType="text"
-        android:textColorHint="@color/grishint" />
+        android:textColorHint="@color/gris2" />
 
     <TextView
         android:id="@+id/txt3a"
@@ -82,12 +82,12 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@color/lilahint"
+        android:background="@color/lila2"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:hint="@string/hintemail"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/grishint" />
+        android:textColorHint="@color/gris2" />
 
     <TextView
         android:id="@+id/txt3b"
@@ -104,12 +104,12 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@color/lilahint"
+        android:background="@color/lila2"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:hint="@string/hintcontras"
         android:inputType="numberPassword"
-        android:textColorHint="@color/grishint" />
+        android:textColorHint="@color/gris2" />
 
 
     <TextView
@@ -127,12 +127,12 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@color/lilahint"
+        android:background="@color/lila2"
         android:ems="10"
         android:fontFamily="@font/jua"
         android:hint="@string/txt44"
         android:inputType="numberPassword"
-        android:textColorHint="@color/grishint" />
+        android:textColorHint="@color/gris2" />
 
     <TextView
         android:id="@+id/txt81"
