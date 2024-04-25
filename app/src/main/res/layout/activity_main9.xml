@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/lila"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
     android:theme="@style/Base.Theme.AlkewalletAndroid"
     tools:context=".MainActivity9">
 
@@ -22,9 +23,10 @@
         <ImageButton
             android:id="@+id/button93"
             android:layout_width="110dp"
-            android:layout_height="41dp"
+            android:layout_height="48dp"
             android:layout_gravity="right"
             android:backgroundTint="@color/lila"
+            android:contentDescription="Null"
             android:foregroundGravity="right"
             app:srcCompat="@drawable/lapiz_icon" />
 
@@ -35,7 +37,7 @@
             android:fontFamily="@font/jua"
             android:gravity="center"
             android:text="@string/txt91"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -57,54 +59,54 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="415dp"
-        android:layout_height="368dp"
+        android:layout_width="408dp"
+        android:layout_height="419dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.983">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.933">
 
         <ImageButton
             android:id="@+id/button94"
-            android:contentDescription="Null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:background="@color/lila"
             android:backgroundTint="@color/white"
+            android:contentDescription="Null"
             app:srcCompat="@drawable/masinform" />
 
         <ImageButton
             android:id="@+id/button95"
-            android:contentDescription="Null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:background="@color/lila"
             android:backgroundTint="@color/white"
+            android:contentDescription="Null"
             app:srcCompat="@drawable/mistarj" />
 
         <ImageButton
             android:id="@+id/button96"
-            android:contentDescription="Null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:background="@color/lila"
             android:backgroundTint="@color/white"
+            android:contentDescription="Null"
             app:srcCompat="@drawable/opcio" />
 
         <ImageButton
             android:id="@+id/button97"
-            android:contentDescription="Null"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:background="@color/lila"
             android:backgroundTint="@color/white"
+            android:contentDescription="Null"
             app:srcCompat="@drawable/centroayud" />
 
     </LinearLayout>
