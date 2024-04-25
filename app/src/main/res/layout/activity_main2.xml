@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity2">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -16,18 +16,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher_oval5" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="108dp"
         android:backgroundTint="#63B8FC"
         android:fontFamily="@font/jua"
         android:text="@string/button1"
-        android:textSize="20sp"
+        android:textSize="14sp"
         app:iconTint="@color/celeste"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +36,8 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="381dp"
-        android:layout_height="409dp"
+        android:layout_width="380dp"
+        android:layout_height="356dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -55,7 +54,7 @@
         android:gravity="center"
         android:text="@string/txt1"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,12 +68,11 @@
         android:gravity="center"
         android:text="@string/txt2"
         android:textColor="@color/celeste"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintVertical_bias="0.905" />
 </androidx.constraintlayout.widget.ConstraintLayout>
