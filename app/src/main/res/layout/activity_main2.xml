@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity2">
+    tools:context=".View.MainActivity2">
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="1912dp"
-        android:layout_height="746dp"
+        android:layout_width="2084dp"
+        android:layout_height="809dp"
         android:layout_marginBottom="176dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,13 +48,13 @@
 
     <TextView
         android:id="@+id/txt1"
-        android:layout_width="255dp"
-        android:layout_height="28dp"
+        android:layout_width="290dp"
+        android:layout_height="24dp"
         android:fontFamily="@font/jua"
         android:gravity="center"
         android:text="@string/txt1"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

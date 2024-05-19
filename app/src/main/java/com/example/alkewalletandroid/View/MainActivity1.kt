@@ -1,19 +1,31 @@
-package com.example.alkewalletandroid;
+package com.example.alkewalletandroid.View
 
-import android.os.Bundle;
+import android.content.Intent
+import android.os.Bundle
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.alkewalletandroid.R
+import com.example.alkewalletandroid.databinding.ActivityMain1Binding
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+class MainActivity1 : AppCompatActivity() {
+    private lateinit var binding: ActivityMain1Binding
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        binding = ActivityMain1Binding.inflate(layoutInflater)
+        setContentView(binding.getRoot())
+
+        findViewById<ImageView>(R.id.imageView)
+
+        binding.imageView.setOnClickListener {
+                val intent = Intent(this, MainActivity2::class.java)
+                startActivity(intent)
+
+
+
+        }
 
     }
 }
