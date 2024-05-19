@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.fragment_singup">
+
+    <EditText
+        android:id="@+id/txt41"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text="@string/txt41"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/txt4a"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt42"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lila2"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/hint1"
+        android:inputType="text"
+        android:textColorHint="@color/gris2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt4b"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt43"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lila2"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/hint2"
+        android:inputType="text"
+        android:textColorHint="@color/gris2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt3a"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt32"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lila2"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/hint7"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/gris2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt3b"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt33"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lila2"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/hint8"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/gris2"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/txt4c"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt44"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/recontra"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/lila2"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:hint="@string/txt44"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/gris2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt81"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right|center_vertical"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#63B8FC"
+        android:fontFamily="@font/jua"
+        android:text="@string/button4"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt45"
+        android:layout_width="239dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:text="@string/txt45"
+        android:textColor="@color/celeste"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
