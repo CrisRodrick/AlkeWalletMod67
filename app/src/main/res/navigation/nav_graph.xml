@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_splash">
 
+    <fragment
+        android:id="@+id/fragment_home_empty"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_home_empty"
+        android:label="fragment_home_empty"
+        tools:layout="@layout/fragment_home_empty" />
+    <fragment
+        android:id="@+id/fragment_home_page"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_home_page"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_fragment_home_page_to_fragment_request_money"
+            app:destination="@id/fragment_request_money" />
+        <action
+            android:id="@+id/action_fragment_home_page_to_fragment_send_money"
+            app:destination="@id/fragment_send_money" />
+        <action
+            android:id="@+id/action_fragment_home_page_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_singup"
+            app:destination="@id/fragment_singup" />
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_login_singup"
+            app:destination="@id/fragment_login_singup" />
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login_singup"
+        android:name="com.example.alkewalletandroid.Login_singup.fragment_login_singup"
+        android:label="fragment_login_singup"
+        tools:layout="@layout/fragment_login_singup" >
+        <action
+            android:id="@+id/action_fragment_login_singup_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_login_singup_to_fragment_singup2"
+            app:destination="@id/fragment_singup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragment_request_money"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_request_money"
+        android:label="fragment_request_money"
+        tools:layout="@layout/fragment_request_money" >
+        <action
+            android:id="@+id/action_fragment_request_money_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_send_money"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_send_money"
+        android:label="fragment_send_money"
+        tools:layout="@layout/fragment_send_money" >
+        <action
+            android:id="@+id/action_fragment_send_money_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_singup"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_singup"
+        android:label="fragment_singup"
+        tools:layout="@layout/fragment_singup" >
+        <action
+            android:id="@+id/action_fragment_singup_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_singup_to_fragment_login_singup"
+            app:destination="@id/fragment_login_singup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.example.alkewalletandroid.Fragments.Fragment_splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_fragment_splash_to_fragment_login_singup"
+            app:destination="@id/fragment_login_singup" />
+    </fragment>
 </navigation>

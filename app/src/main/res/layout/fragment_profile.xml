@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:backgroundTint="@color/white"
     android:theme="@style/Base.Theme.AlkewalletAndroid"
-    tools:context=".Fragments.fragment_profile">
+    tools:context=".Fragments.Fragment_profile">
 
     <LinearLayout
         android:id="@+id/linearLayout"
