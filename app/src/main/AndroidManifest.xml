@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AlkewalletAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".visor"
+            android:name=".Splash.Fragment_splash"
             android:exported="false" />
         <activity
             android:name=".Profile.Fragment_profile"
@@ -40,7 +40,7 @@
             android:name=".Login_singup.Fragment_login_singup"
             android:exported="false" />
         <activity
-            android:name=".Splash.Fragment_splash"
+            android:name=".visor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
