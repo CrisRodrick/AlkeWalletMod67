@@ -13,34 +13,34 @@
         android:theme="@style/Theme.AlkewalletAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".Fragments.visor"
+            android:name=".visor"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity9"
+            android:name=".Profile.Fragment_profile"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity8"
+            android:name=".Send_money.Fragment_send_money"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity7"
+            android:name=".Request_money.Fragment_request_money"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity6"
+            android:name=".Home_empty.Fragment_home_empty"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity5"
+            android:name=".Home_page.Fragment_home_page"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity4"
+            android:name=".Singup.Fragment_singup"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity3"
+            android:name=".Login.Fragment_login"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity2"
+            android:name=".Login_singup.Fragment_login_singup"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity1"
+            android:name=".Splash.Fragment_splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

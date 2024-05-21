@@ -1,4 +1,4 @@
-package com.example.alkewalletandroid.Fragments
+package com.example.alkewalletandroid.Splash
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

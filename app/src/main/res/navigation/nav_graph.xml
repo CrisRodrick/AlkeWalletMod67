@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/fragment_home_empty"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_home_empty"
+        android:name="com.example.alkewalletandroid.Home_empty.Fragment_home_empty"
         android:label="fragment_home_empty"
         tools:layout="@layout/fragment_home_empty" />
     <fragment
         android:id="@+id/fragment_home_page"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_home_page"
+        android:name="com.example.alkewalletandroid.Home_page.Fragment_home_page"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_login"
+        android:name="com.example.alkewalletandroid.Login.Fragment_login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -54,12 +54,12 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_profile"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_profile"
+        android:name="com.example.alkewalletandroid.Profile.Fragment_profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/fragment_request_money"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_request_money"
+        android:name="com.example.alkewalletandroid.Request_money.Fragment_request_money"
         android:label="fragment_request_money"
         tools:layout="@layout/fragment_request_money" >
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_send_money"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_send_money"
+        android:name="com.example.alkewalletandroid.Send_money.Fragment_send_money"
         android:label="fragment_send_money"
         tools:layout="@layout/fragment_send_money" >
         <action
@@ -77,7 +77,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_singup"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_singup"
+        android:name="com.example.alkewalletandroid.Singup.Fragment_singup"
         android:label="fragment_singup"
         tools:layout="@layout/fragment_singup" >
         <action
@@ -89,7 +89,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_splash"
-        android:name="com.example.alkewalletandroid.Fragments.Fragment_splash"
+        android:name="com.example.alkewalletandroid.Splash.Fragment_splash"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
