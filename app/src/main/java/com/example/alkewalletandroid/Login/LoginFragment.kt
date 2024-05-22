@@ -50,7 +50,7 @@ class LoginFragment : Fragment() {
         viewModel.loginModel.observe(viewLifecycleOwner,
             Observer { loginModel ->
                 loginModel?: return@Observer
-                loginModel.success
+       //         loginModel.success
 
         })
 

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.alkewalletandroid.R
 import com.example.alkewalletandroid.databinding.FragmentSplashBinding
@@ -20,7 +21,7 @@ class Fragment_splash : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding= FragmentSplashBinding.inflate(inflater, container, false)
         return  binding.root
@@ -30,11 +31,16 @@ class Fragment_splash : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val imageView = binding.imageView
+        //val imageView = binding.imageView
 
-        imageView.setOnClickListener{
-            findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
+        binding.imageView.setOnClickListener{
+           // view.findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
+            view.findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
         }
+
+        //imageView.setOnClickListener{
+        //    findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
+       // }
 
 
     }

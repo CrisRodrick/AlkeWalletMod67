@@ -12,11 +12,11 @@ class LoginViewModel : ViewModel (){
     val loginModel: LiveData<LoginModel>
         get() = _loginModel
 
-    fun setLoginData (email: String, password: String) = viewModelScope.launch {
+   // fun setLoginData (email: String, password: String) = viewModelScope.launch {
 
-        _loginModel.value = LoginModel(email, password)
+    //    _loginModel.value = LoginModel(email, password)
 
     }
 
 
-}
+//}

@@ -1,8 +1,12 @@
 package com.example.alkewalletandroid.Login
 
+import android.provider.ContactsContract.CommonDataKinds.Email
+
 data class LoginModel (
-    val success: Unit,
-    val email: String,
-    val password: String
+    val nombre: String,
+    val apellido: String,
+    val email: String?,
+    val clave : String?
+
 
 )

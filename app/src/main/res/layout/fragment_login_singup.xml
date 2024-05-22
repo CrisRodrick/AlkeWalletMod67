@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Login_singup.fragment_login_singup">
+    tools:context=".Login_singup.Fragment_login_singup">
 
     <ImageView
         android:id="@+id/imageView7"
