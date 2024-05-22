@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.example.alkewalletandroid.Login.Fragment_login"
+        android:name="com.example.alkewalletandroid.Login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action

@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:weightSum="12"
-    tools:context=".Login.Fragment_login">
+    tools:context=".Login.LoginFragment">
 
     <EditText
         android:id="@+id/txt41"
