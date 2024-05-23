@@ -8,15 +8,29 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel : ViewModel (){
 
-    private val _loginModel= MutableLiveData<LoginModel>()
-    val loginModel: LiveData<LoginModel>
-        get() = _loginModel
+    private val _email = MutableLiveData <String?>()
+    val email : LiveData<String?> get() = _email
 
-   // fun setLoginData (email: String, password: String) = viewModelScope.launch {
+    private val _contrasena = MutableLiveData <String?>()
+    val contrasena : LiveData<String?> get() = _contrasena
 
-    //    _loginModel.value = LoginModel(email, password)
+    private val _validarUsuario = MutableLiveData<Boolean>()
+    val validarUsuario: LiveData<Boolean> get() = _validarUsuario
 
+    fun validar (email:String, contrasena:String){
+
+        _email.value = email
+        _contrasena.value = contrasena
+        validarUsuario()
+    }
+
+    private fun validarUsuario(){
+
+        val usuarioValido = !(_email.value.isNullOrEmpty() || _contrasena.value.isNullOrEmpty())
+
+
+        _validarUsuario.value= usuarioValido
+    }
     }
 
 
-//}

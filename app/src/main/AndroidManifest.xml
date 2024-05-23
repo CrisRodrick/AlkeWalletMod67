@@ -31,7 +31,7 @@
             android:name=".Home_page.Fragment_home_page"
             android:exported="false" />
         <activity
-            android:name=".Singup.Fragment_singup"
+            android:name=".Singup.SingupFragment"
             android:exported="false" />
         <activity
             android:name=".Login.LoginFragment"

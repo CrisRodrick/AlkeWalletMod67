@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_login_singup"
-        android:name="com.example.alkewalletandroid.Login_singup.fragment_login_singup"
+        android:name="com.example.alkewalletandroid.Login_singup.Fragment_login_singup"
         android:label="fragment_login_singup"
         tools:layout="@layout/fragment_login_singup" >
         <action
@@ -77,7 +77,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_singup"
-        android:name="com.example.alkewalletandroid.Singup.Fragment_singup"
+        android:name="com.example.alkewalletandroid.Singup.SingupFragment"
         android:label="fragment_singup"
         tools:layout="@layout/fragment_singup" >
         <action
@@ -94,6 +94,12 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_fragment_splash_to_fragment_login_singup"
+            app:destination="@id/fragment_login_singup2" />
+        <action
+            android:id="@+id/action_fragment_splash_to_fragment_login_singup2"
             app:destination="@id/fragment_login_singup" />
+        <action
+            android:id="@+id/action_fragment_splash_to_fragment_login"
+            app:destination="@id/fragment_login" />
     </fragment>
 </navigation>

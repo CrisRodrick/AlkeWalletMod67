@@ -1,4 +1,4 @@
-package com.example.alkewalletandroid.Login
+package com.example.alkewalletandroid.Singup
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,20 +8,17 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.alkewalletandroid.R
 import com.example.alkewalletandroid.databinding.FragmentLoginBinding
+import com.example.alkewalletandroid.databinding.FragmentSingupBinding
 
 
 
-class LoginFragment : Fragment() {
-
-    private var _binding: FragmentLoginBinding? = null
+class SingupFragment : Fragment() {
+    private var _binding: FragmentSingupBinding? = null
     private val binding get() = _binding!!
-
-    private val viewModel: LoginViewModel by viewModels<LoginViewModel> ()
-
+    private val viewModel: SingupViewModel by viewModels<SingupViewModel> ()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,36 +30,35 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentSingupBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        
         binding.apply {
             button3.setOnClickListener {
+                val nombre = editTextText.text.toString()
+                val apellido = editTextText2.text.toString()
                 val email = txtEmail.text.toString()
                 val contrasena = contra.text.toString()
-                viewModel.validar(email, contrasena)
+                val recontrasena = recontra.text.toString()
+                viewModel.validar(nombre, apellido, email, contrasena, recontrasena)
             }
         }
+
 
         viewModel.validarUsuario.observe(viewLifecycleOwner, Observer { valido ->
             if (valido){
                 Toast.makeText(requireContext(), "Sesión iniciada", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_fragment_login_to_fragment_home_page)
+                findNavController().navigate(R.id.action_fragment_singup_to_fragment_login)
             }else{
                 Toast.makeText(requireContext(), "Usuario no válido", Toast.LENGTH_SHORT).show()
             }
 
         })
-
         binding.txt45.setOnClickListener{
-            findNavController().navigate(R.id.action_fragment_login_to_fragment_singup)
+            findNavController().navigate(R.id.action_fragment_singup_to_fragment_login)
         }
-
     }
 }
