@@ -41,7 +41,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        
+
         binding.apply {
             button3.setOnClickListener {
                 val email = txtEmail.text.toString()
@@ -61,7 +61,7 @@ class LoginFragment : Fragment() {
         })
 
         binding.txt45.setOnClickListener{
-            findNavController().navigate(R.id.action_fragment_login_to_fragment_singup)
+          findNavController().navigate(R.id.action_fragment_login_to_singupFragment)
         }
 
     }

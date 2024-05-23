@@ -5,6 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragment_splash">
 
+    <!-- arregar nombre del fragmento -->
     <fragment
         android:id="@+id/fragment_home_empty"
         android:name="com.example.alkewalletandroid.Home_empty.Fragment_home_empty"
@@ -31,14 +32,14 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_fragment_login_to_fragment_singup"
-            app:destination="@id/fragment_singup" />
-        <action
             android:id="@+id/action_fragment_login_to_fragment_login_singup"
             app:destination="@id/fragment_login_singup" />
         <action
             android:id="@+id/action_fragment_login_to_fragment_home_page"
             app:destination="@id/fragment_home_page" />
+        <action
+            android:id="@+id/action_fragment_login_to_singupFragment"
+            app:destination="@id/singupFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragment_login_singup"
@@ -49,8 +50,8 @@
             android:id="@+id/action_fragment_login_singup_to_fragment_login"
             app:destination="@id/fragment_login" />
         <action
-            android:id="@+id/action_fragment_login_singup_to_fragment_singup2"
-            app:destination="@id/fragment_singup" />
+            android:id="@+id/action_fragment_login_singup_to_singupFragment"
+            app:destination="@id/singupFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragment_profile"
@@ -76,30 +77,24 @@
             app:destination="@id/fragment_home_page" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_singup"
-        android:name="com.example.alkewalletandroid.Singup.SingupFragment"
-        android:label="fragment_singup"
-        tools:layout="@layout/fragment_singup" >
-        <action
-            android:id="@+id/action_fragment_singup_to_fragment_login"
-            app:destination="@id/fragment_login" />
-        <action
-            android:id="@+id/action_fragment_singup_to_fragment_login_singup"
-            app:destination="@id/fragment_login_singup" />
-    </fragment>
-    <fragment
         android:id="@+id/fragment_splash"
         android:name="com.example.alkewalletandroid.Splash.Fragment_splash"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_fragment_splash_to_fragment_login_singup"
-            app:destination="@id/fragment_login_singup2" />
-        <action
-            android:id="@+id/action_fragment_splash_to_fragment_login_singup2"
             app:destination="@id/fragment_login_singup" />
+    </fragment>
+    <fragment
+        android:id="@+id/singupFragment"
+        android:name="com.example.alkewalletandroid.Singup.SingupFragment"
+        android:label="fragment_singup"
+        tools:layout="@layout/fragment_singup" >
         <action
-            android:id="@+id/action_fragment_splash_to_fragment_login"
+            android:id="@+id/action_singupFragment_to_fragment_login"
             app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_singupFragment_to_fragment_login_singup"
+            app:destination="@id/fragment_login_singup" />
     </fragment>
 </navigation>

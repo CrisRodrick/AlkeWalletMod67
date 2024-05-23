@@ -51,14 +51,14 @@ class SingupFragment : Fragment() {
         viewModel.validarUsuario.observe(viewLifecycleOwner, Observer { valido ->
             if (valido){
                 Toast.makeText(requireContext(), "Sesión iniciada", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_fragment_singup_to_fragment_login)
+                findNavController().navigate(R.id.action_singupFragment_to_fragment_login)
             }else{
                 Toast.makeText(requireContext(), "Usuario no válido", Toast.LENGTH_SHORT).show()
             }
 
         })
         binding.txt45.setOnClickListener{
-            findNavController().navigate(R.id.action_fragment_singup_to_fragment_login)
+           findNavController().navigate(R.id.action_singupFragment_to_fragment_login)
         }
     }
 }

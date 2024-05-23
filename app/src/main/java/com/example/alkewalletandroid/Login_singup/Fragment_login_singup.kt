@@ -15,7 +15,7 @@ import com.example.alkewalletandroid.databinding.FragmentLoginSingupBinding
 class Fragment_login_singup : Fragment() {
     private var _binding: FragmentLoginSingupBinding? = null
     private val binding get() = _binding!!
-    private val viewModel by viewModels<ViewModel_login_singup> ()
+    private val viewModel: ViewModel_login_singup by viewModels<ViewModel_login_singup> ()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,18 +35,16 @@ class Fragment_login_singup : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Observando el LiveData en el ViewModel2
-        viewModel.actividadDestino.observe(viewLifecycleOwner, Observer { actividad ->
-            val singupButton = binding.button1
-            val loginText = binding.txt2
+        binding.button1.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_login_singup_to_singupFragment)
 
-            singupButton.setOnClickListener{
-                findNavController().navigate(R.id.action_fragment_login_singup_to_fragment_singup2)
-            }
+        }
+        binding.txt2.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_login_singup_to_fragment_login)
+        }
 
-            loginText.setOnClickListener{
-                findNavController().navigate(R.id.action_fragment_login_singup_to_fragment_login)
-            }
-        })
+
     }
+
+
 }

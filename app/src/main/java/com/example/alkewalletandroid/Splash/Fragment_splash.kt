@@ -35,7 +35,7 @@ class Fragment_splash : Fragment() {
 
         binding.imageView.setOnClickListener{
            // view.findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
-            view.findNavController().navigate(R.id.action_fragment_splash_to_fragment_login)
+            view.findNavController().navigate(R.id.action_fragment_splash_to_fragment_login_singup)
         }
 
         //imageView.setOnClickListener{
