@@ -11,6 +11,7 @@ import com.example.alkewalletandroid.Login.LoginViewModel
 import com.example.alkewalletandroid.R
 import com.example.alkewalletandroid.databinding.FragmentLoginBinding
 import com.example.alkewalletandroid.databinding.FragmentProfileBinding
+import kotlinx.coroutines.flow.combineTransform
 
 
 class Fragment_profile : Fragment() {
@@ -40,6 +41,9 @@ class Fragment_profile : Fragment() {
         binding.cerrar.setOnClickListener {
             findNavController().navigate(R.id.action_fragment_profile_to_fragment_login)
 
+        }
+        binding.button93.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_profile_to_fragment_home_page)
         }
     }
 

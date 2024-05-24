@@ -14,7 +14,7 @@ import java.util.zip.Inflater
 
 class Fragment_home_page : Fragment() {
     private var _binding: FragmentHomePageBinding? = null
-    private val binding = _binding!!
+    private val binding get() =  _binding!!
 
     private val viewModel: HomePageViewModel by viewModels<HomePageViewModel> ()
 

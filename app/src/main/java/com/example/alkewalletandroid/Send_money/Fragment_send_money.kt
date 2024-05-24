@@ -50,11 +50,15 @@ class Fragment_send_money : Fragment() {
                 Toast.makeText(requireContext(), "Envío Válido", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_fragment_send_money_to_fragment_home_page)
             }else{
-                Toast.makeText(requireContext(), "Envío no válido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Ingresar monto y nota", Toast.LENGTH_SHORT).show()
             }
 
 
         })
+
+        binding.flecha.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_send_money_to_fragment_home_page)
+        }
 
     }
 

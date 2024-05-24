@@ -22,13 +22,14 @@
 
         <ImageButton
             android:id="@+id/button93"
-            android:layout_width="110dp"
+            android:layout_width="130dp"
             android:layout_height="48dp"
-            android:layout_gravity="right"
+            android:layout_gravity="left"
             android:backgroundTint="@color/lila"
             android:contentDescription="Null"
             android:foregroundGravity="right"
-            app:srcCompat="@drawable/lapiz_icon" />
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            app:tint="@color/black" />
 
         <TextView
             android:id="@+id/txt91"
@@ -113,6 +114,7 @@
             android:layout_width="221dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="@color/celeste3"
             android:text="@string/Cerrar"
             android:textColorLink="@color/celeste2"
             app:icon="@android:drawable/ic_input_delete"

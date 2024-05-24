@@ -48,11 +48,14 @@ class Fragment_request_money : Fragment() {
                 Toast.makeText(requireContext(), "Ingreso Válido", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_fragment_request_money_to_fragment_home_page)
             }else{
-                Toast.makeText(requireContext(), "Ingreso no válido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Ingresar monto y nota", Toast.LENGTH_SHORT).show()
             }
 
 
         })
+        binding.flecha.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_request_money_to_fragment_home_page)
+        }
 
     }
 
