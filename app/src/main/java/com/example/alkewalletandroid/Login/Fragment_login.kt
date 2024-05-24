@@ -62,6 +62,9 @@ class Fragment_login : Fragment() {
         binding.txt45.setOnClickListener{
           findNavController().navigate(R.id.action_fragment_login_to_singupFragment)
         }
+        binding.txt81.setOnClickListener{
+            findNavController().navigate(R.id.action_fragment_login_to_singupFragment)
+        }
 
     }
 }
