@@ -108,5 +108,16 @@
             android:contentDescription="Null"
             app:srcCompat="@drawable/centroayud" />
 
+        <Button
+            android:id="@+id/cerrar"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Cerrar"
+            android:textColorLink="@color/celeste2"
+            app:icon="@android:drawable/ic_input_delete"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

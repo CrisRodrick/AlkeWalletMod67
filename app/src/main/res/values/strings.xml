@@ -40,6 +40,8 @@
     <string name="txt92">Amanda Alkemy</string>
     <string name="hint7">Ingresar su Email</string>
     <string name="hint8">Ingrese su Contraseña</string>
+    <string name="Cerrar">Cerrar sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

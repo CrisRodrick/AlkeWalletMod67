@@ -8,14 +8,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.alkewalletandroid.R
 import com.example.alkewalletandroid.databinding.FragmentLoginBinding
 
 
 
-class LoginFragment : Fragment() {
+class Fragment_login : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!

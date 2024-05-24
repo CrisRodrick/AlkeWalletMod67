@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.example.alkewalletandroid.Login.LoginFragment"
+        android:name="com.example.alkewalletandroid.Login.Fragment_login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -57,7 +57,11 @@
         android:id="@+id/fragment_profile"
         android:name="com.example.alkewalletandroid.Profile.Fragment_profile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragment_profile_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_request_money"
         android:name="com.example.alkewalletandroid.Request_money.Fragment_request_money"

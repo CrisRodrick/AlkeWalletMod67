@@ -5,56 +5,58 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
+import com.example.alkewalletandroid.Login.LoginViewModel
 import com.example.alkewalletandroid.R
+import com.example.alkewalletandroid.databinding.FragmentLoginBinding
+import com.example.alkewalletandroid.databinding.FragmentSendMoneyBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Fragment_send_money.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Fragment_send_money : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var _binding: FragmentSendMoneyBinding? = null
+    private val binding get() = _binding!!
+
+    private val viewModel: SendViewModel by viewModels<SendViewModel> ()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_send_money, container, false)
+        _binding = FragmentSendMoneyBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment fragment_send_money.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Fragment_send_money().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.apply {
+            button9.setOnClickListener {
+                val transferencia = hint4.text.toString()
+                val notas = hint5.text.toString()
+                viewModel.validar(transferencia, notas)
             }
+        }
+        viewModel.validarIngresos.observe(viewLifecycleOwner, Observer { valido ->
+            if (valido){
+                Toast.makeText(requireContext(), "Envío Válido", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_fragment_send_money_to_fragment_home_page)
+            }else{
+                Toast.makeText(requireContext(), "Envío no válido", Toast.LENGTH_SHORT).show()
+            }
+
+
+        })
+
     }
+
+
 }

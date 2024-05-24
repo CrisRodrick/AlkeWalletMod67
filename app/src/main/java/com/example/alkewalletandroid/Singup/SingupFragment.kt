@@ -50,7 +50,7 @@ class SingupFragment : Fragment() {
 
         viewModel.validarUsuario.observe(viewLifecycleOwner, Observer { valido ->
             if (valido){
-                Toast.makeText(requireContext(), "Sesión iniciada", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Ingrese Login", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_singupFragment_to_fragment_login)
             }else{
                 Toast.makeText(requireContext(), "Usuario no válido", Toast.LENGTH_SHORT).show()
