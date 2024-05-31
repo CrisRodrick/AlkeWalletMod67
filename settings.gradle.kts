@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AlkewalletAndroid"
+rootProject.name = "AlkeWalletMod6"
 include(":app")
  
