@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("dagger.hilt.android.plugin")
     id("kotlin-android")      //Room
     id("kotlin-kapt")		//room
 }
@@ -45,6 +46,9 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.core.ktx)
+    implementation(libs.transport.runtime)
+    implementation(libs.play.services.cast.framework)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -84,5 +88,19 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
+    // Hilt Core
+    implementation("com.google.dagger:hilt-android:2.50")
+    kapt("com.google.dagger:hilt-android-compiler:2.50")
 
+    // Hilt ViewModel
+    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03") // Asegúrate de usar la versión más reciente si está disponible
+    kapt("androidx.hilt:hilt-compiler:1.0.0") // Esta es
+
+    //otras
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+    implementation ("javax.inject:javax.inject:1")
+}
+kapt {
+    correctErrorTypes = true       // Para asegurarte de que Hilt está correctamente configurado
 }
