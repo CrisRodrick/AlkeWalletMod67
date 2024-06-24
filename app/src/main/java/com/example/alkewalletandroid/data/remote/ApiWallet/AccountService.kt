@@ -1,4 +1,4 @@
-package com.example.alkewalletandroid.data.remote
+package com.example.alkewalletandroid.data.remote.ApiWallet
 
 import android.accounts.Account
 import retrofit2.Response

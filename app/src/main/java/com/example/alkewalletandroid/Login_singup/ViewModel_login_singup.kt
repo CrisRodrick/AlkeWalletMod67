@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.alkewalletandroid.data.local.LoginSingup
+import com.example.alkewalletandroid.data.remote.FromInternet.LoginSingup
 
 //Creación de `LiveData` en el `ViewModel2`
 

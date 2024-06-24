@@ -1,4 +1,4 @@
-package com.example.alkewalletandroid.data.local
+package com.example.alkewalletandroid.data.remote.FromInternet
 
 import com.google.gson.annotations.SerializedName
 

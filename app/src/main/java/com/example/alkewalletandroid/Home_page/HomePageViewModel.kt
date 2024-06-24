@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.alkewalletandroid.data.local.HomePage
+import com.example.alkewalletandroid.data.remote.FromInternet.HomePage
 
 
 //Creacion de LiveData

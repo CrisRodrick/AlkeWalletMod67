@@ -1,4 +1,4 @@
-package com.example.alkewalletandroid.data.local
+package com.example.alkewalletandroid.data.remote.FromInternet
 
 import androidx.fragment.app.Fragment
 import com.example.alkewalletandroid.Login.Fragment_login

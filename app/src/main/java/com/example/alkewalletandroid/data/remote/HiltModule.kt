@@ -3,6 +3,10 @@ package com.example.alkewalletandroid.data.remote
 import android.content.Context
 import com.example.alkewalletandroid.Login.AuthInterceptor
 import com.example.alkewalletandroid.Login.SessionManager
+import com.example.alkewalletandroid.data.remote.ApiWallet.AccountService
+import com.example.alkewalletandroid.data.remote.ApiWallet.AuthService
+import com.example.alkewalletandroid.data.remote.ApiWallet.TransactionService
+import com.example.alkewalletandroid.data.remote.ApiWallet.UserService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

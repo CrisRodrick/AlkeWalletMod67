@@ -1,7 +1,7 @@
-package com.example.alkewalletandroid.data.remote
+package com.example.alkewalletandroid.data.remote.ApiWallet
 
-import com.example.alkewalletandroid.data.local.Transaction
-import com.example.alkewalletandroid.data.local.TransactionsResponse
+import com.example.alkewalletandroid.data.remote.FromInternet.Transaction
+import com.example.alkewalletandroid.data.remote.FromInternet.TransactionsResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET

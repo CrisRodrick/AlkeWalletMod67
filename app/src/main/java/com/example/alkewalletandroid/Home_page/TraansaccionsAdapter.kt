@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.alkewalletandroid.data.local.TransactionView
+import com.example.alkewalletandroid.data.remote.FromInternet.TransactionView
 import com.example.alkewalletandroid.databinding.RvTransactionItemBinding
 
 
