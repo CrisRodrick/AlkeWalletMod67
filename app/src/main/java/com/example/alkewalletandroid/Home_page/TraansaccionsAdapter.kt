@@ -60,30 +60,5 @@ class TraansaccionsAdapter : RecyclerView.Adapter<TraansaccionsAdapter.Transacti
 
 
 
-//private fun <TransactionView> View.setOnClickListener(viewHolder: TransactionViewHolder) {
-
-//}
-
-
-//profe
-/*inner class CourseVH(private val mbinding: CoursesListBinding) :
-    RecyclerView.ViewHolder(mbinding.root), View.OnClickListener {
-
-    fun bin(course: CoursesEntity) {
-        Glide.with(mbinding.ivLogo).load(course.image).centerCrop().into(mbinding.ivLogo)
-        mbinding.tvname.text = course.title
-        mbinding.tvdescription.text = course.previewDescription
-        mbinding.tvduration.text = "duracion:" + course.weeks.toString() + "semanas"
-        mbinding.tvstart.text = "Inicio" + course.start
-        itemView.setOnClickListener(this)
-
-
-
-    @SuppressLint("SuspiciousIndentation")
-    override fun onClick(v: View?) {
-        selectedCourse.value = listCourses[adapterPosition]
-        Log.d("ONCLICK", adapterPosition.toString())
-    }*/
-
 
 
